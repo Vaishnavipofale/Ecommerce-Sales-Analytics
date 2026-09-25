@@ -27,39 +27,45 @@ This project analyzes sales performance, profitability, customer behavior, produ
 ## Project Structure
 
 ```text
-ecommerce-sales-profit-analysis/
+Ecommerce-Sales-Analytics/
 
-├── data/
-│   ├── dictionary/
-│   │   └── data_dictionary.csv
-│   ├── raw/
-│   │   └── ecommerce_raw.csv
-│   └── processed/
-│       └── ecommerce_clean.csv
+├── README.md
 │
-├── notebooks/
-│   ├── ecommerce_sales_profit_analysis.ipynb
-│   └── import_data_mssql.ipynb
-│
-├── powerbi_dashboard/
-│   └── powerbi_dashboard.pbix
-│
-├── screenshots/
-│
-├── sql/
-│   ├── 01_Database_and_Table_setup/
-│   ├── 02_Data_cleaning_sql/
-│   ├── 03_KPI_Analysis/
-│   ├── 04_Customer_Analysis/
-│   ├── 05_Product_Analysis/
-│   ├── 06_Time_Series_Analysis/
-│   ├── 07_Advanced_Business_Question/
-│   ├── 08_ETL_Star_Schema/
-│   └── ER_Diagram.png
-│
-├── .gitignore
-├── requirements.txt
-└── README.md
+└── ecommerce-sales-profit-analysis/
+    │
+    ├── data/
+    │   ├── dictionary/
+    │   │   └── data_dictionary.csv
+    │   ├── raw/
+    │   │   └── ecommerce_raw.csv
+    │   └── processed/
+    │       └── ecommerce_clean.csv
+    │
+    ├── notebooks/
+    │   ├── ecommerce_sales_profit_analysis.ipynb
+    │   └── import_data_mssql.ipynb
+    │
+    ├── powerbi_dashboard/
+    │   ├── Icon Images/
+    │   └── PowerBI_dashboard.pbix
+    │
+    ├── screenshots/
+    │   ├── Notebook_Screenshots/
+    │   └── PowerBI_Screenshots/
+    │
+    ├── sql/
+    │   ├── 01_Database_and_Table_setup/
+    │   ├── 02_Data_cleaning_sql/
+    │   ├── 03_KPI_Analysis/
+    │   ├── 04_Customer_Analysis/
+    │   ├── 05_Product_Analysis/
+    │   ├── 06_Time_Series_Analysis/
+    │   ├── 07_Advanced_Business_Question/
+    │   ├── 08_ETL_Star_Schema/
+    │   └── ER_Diagram.png
+    │
+    ├── .gitignore
+    └── requirements.txt
 Technologies Used
 Python
 Pandas
@@ -82,7 +88,7 @@ Installation
 
 Install the required Python dependencies using:
 
-pip install -r requirements.txt
+pip install -r ecommerce-sales-profit-analysis/requirements.txt
 Data Description
 
 The project uses the Sample Superstore dataset containing e-commerce transaction-level data.
@@ -133,9 +139,9 @@ Discount impact analysis
 Business insight generation
 Interactive Plotly visualizations
 
-Main notebook:
+Main Notebook:
+ecommerce_sales_profit_analysis.ipynb
 
-notebooks/ecommerce_sales_profit_analysis.ipynb
 SQL Analysis
 
 The SQL component contains analysis covering:
@@ -152,7 +158,8 @@ Star schema and dimensional modeling
 
 SQL analysis is organized into separate folders under:
 
-sql/
+ecommerce-sales-profit-analysis/sql/
+
 Power BI Dashboard
 
 The Power BI dashboard contains five analytical pages:
@@ -178,9 +185,9 @@ Sub-category performance
 Product performance
 Regional performance
 
-Power BI file:
+Power BI Dashboard:
+PowerBI_dashboard.pbix
 
-powerbi_dashboard/powerbi_dashboard.pbix
 Additional Business Analysis
 
 Additional analysis was added to investigate specific business problems.
@@ -275,7 +282,8 @@ How can sales performance be evaluated alongside profitability?
 
 Detailed SQL business questions are available under:
 
-sql/07_Advanced_Business_Question/
+ecommerce-sales-profit-analysis/sql/07_Advanced_Business_Question/
+
 Data Pipeline
 Raw CSV
    ↓
@@ -307,17 +315,19 @@ fact_sales
 An analytical ecommerce_sales table is also used for analysis.
 
 ER Diagram
-sql/ER_Diagram.png
+
+View ER Diagram
+
 How to Run the Project
 Run the Python Analysis
-jupyter notebook notebooks/ecommerce_sales_profit_analysis.ipynb
+jupyter notebook ecommerce-sales-profit-analysis/notebooks/ecommerce_sales_profit_analysis.ipynb
 Import Data into SQL Server
-jupyter notebook notebooks/import_data_mssql.ipynb
+jupyter notebook ecommerce-sales-profit-analysis/notebooks/import_data_mssql.ipynb
 Execute SQL Analysis
 
 Open the SQL files located inside:
 
-sql/
+ecommerce-sales-profit-analysis/sql/
 
 and execute them using SQL Server Management Studio (SSMS) or another compatible SQL environment.
 
@@ -325,7 +335,8 @@ Open the Power BI Dashboard
 
 Open the following file using Power BI Desktop:
 
-powerbi_dashboard/powerbi_dashboard.pbix
+ecommerce-sales-profit-analysis/powerbi_dashboard/PowerBI_dashboard.pbix
+
 Visualizations
 
 The project includes visual analysis using Python and Power BI.
@@ -352,4 +363,3 @@ Top Products by Sales
 Discount vs Profitability
 Profit Margin by Customer Segment
 Profit Margin by Product Sub-Category
-Project Note
